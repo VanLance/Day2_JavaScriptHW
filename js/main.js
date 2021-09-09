@@ -31,12 +31,13 @@ class Person{
     printInfo = () => {
         return `Hello my name is: ${this.name} and I am ${this.age} years old.`
     }
-    count_up = (function() {
-        return function () {
-            return this.age ++
-        }
-    }) ()
-}
+    count_up = () => {
+        this.age ++
+        console.log(`${this.name} is now ${this.age} years old. `)}
+}           
+        
+     
+
         
 
 let bowie = new Person('David', 69);
